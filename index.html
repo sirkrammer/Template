@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Portal</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap/bootstrap-sticky-footer.css" rel="stylesheet">
+
+	<!-- Slick Carousel -->
+	<link href="css/slick/slick.css" rel="stylesheet">
+	<link href="css/slick/slick-theme.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<!-- Header -->
+	<header class="wrapper-header">
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+			    
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-main-nav" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">
+		        <img alt="Portal" src="images/ic_restaurant_menu_black_24px.svg">
+		      </a>
+		      <a class="navbar-brand" href="#">Portal</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+	    	<div class="collapse navbar-collapse" id="bs-main-nav">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+		        <li><a href="#">About</a></li>
+		        <li><a href="#">Contact</a></li>
+		        <li role="presentation" class="dropdown">
+		        	<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+		        		Others <span class="caret"></span>
+		        	</a>
+		        	<ul class="dropdown-menu">
+		        		<li><a href="#">Privacy</a></li>
+		        		<li><a href="#">Terms</a></li>
+		        	</ul>
+		        </li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		      	<li><a href="#">Login</a></li>
+		      </ul>
+			  </div>
+
+			</div>
+		</nav>
+	</header>
+
+	<!-- Body -->
+	<div class="wrapper-body">
+		<div class="container">
+			<div class="slider-banner">
+			  <div class="container"> 
+			  	<div class="col-sm-9 col-md-9 col-lg-9"><img class="img-responsive" src="images/foods/2_1.jpg"></div>
+			  	<div class="col-sm-3 col-md-3 col-lg-3">
+			  		<h5><strong>Lorem ipsum</strong></h5>
+			  		<p>Dolor sit amet, consectetur adipiscing elit. Donec finibus magna nec lectus euismod porttitor. </p>
+			  	</div>
+			  </div>
+			  <div><img class="img-responsive" src="images/foods/2_2.jpg"></div>
+			  <div><img class="img-responsive" src="images/foods/2_4.jpg"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="footer">
+    <div class="container">
+    	<div class="col-md-6 col-lg-6">
+    		<div class="footer-links">
+		      <small><a href="#">About Us ・</a></small>
+					<small><a href="#">Contact Us ・</a></small>
+					<small><a href="#">Terms </a></small>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-6">
+				<div class="copyright">
+      		<small>© 2017 Company Name. All rights reserved</small>
+      	</div>
+      </div>
+    </div>
+	</footer>
+</body>
+
+	<!-- Bootstrap Prerequisites -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="js/bootstrap/ie10-viewport-bug-workaround.js"></script>
+
+	<!-- Slick Carousel -->
+	<script src="js/slick/slick.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider-banner').slick({
+        dots: true,
+			  infinite: true,
+			  speed: 500,
+			  fade: true,
+			  cssEase: 'linear',
+			  autoplay: true,
+      });
+    });
+  </script>
+
+
+</html>
