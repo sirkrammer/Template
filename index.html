@@ -62,6 +62,12 @@
       background: #000;
     }
 
+    .footer {
+      background: #0d0d0d;
+      color: #fff;
+      padding-top: 10px;
+    }
+
 
   </style>
 </head>
@@ -117,7 +123,7 @@
 
   <!-- Main Banner -->
   <div class="row banner-padding">
-    <div class="col-sm-4 col-md-3 col-lg-3 col-md-offset-8 col-lg-offset-8 cs-slider-content">
+    <div class="col-xs-10 col-sm-4 col-md-3 col-lg-3 col-xs-offset-1 col-sm-offset-4 col-md-offset-8 col-lg-offset-8 cs-slider-content">
 
       <div class="panel panel-default">
         <!-- Panel Contents -->
@@ -149,29 +155,29 @@
                 </div>
                 <div class="col-sm-8 col-md-8 col-lg-8">
                   <select id="cavite-area" multiple="multiple">
-                      <option value="Alfonso">Alfonso</option>
-                      <option value="Amadeo">Amadeo</option>
-                      <option value="Bacoor">Bacoor</option>
-                      <option value="Carmona">Carmona</option>
-                      <option value="Cavite City">Cavite City</option>
-                      <option value="Dasmariñas">Dasmariñas</option>
-                      <option value="General Emilio Aguinaldo">General Emilio Aguinaldo</option>
-                      <option value="General Mariano Alvarez">General Mariano Alvarez</option>
-                      <option value="General Trias">General Trias</option>
-                      <option value="Imus">Imus</option>
-                      <option value="Indang">Indang</option>
-                      <option value="Kawit">Kawit</option>
-                      <option value="Magallanes">Magallanes</option>
-                      <option value="Maragondon">Maragondon</option>
-                      <option value="Mendez">Mendez</option>
-                      <option value="Naic">Naic</option>
-                      <option value="Noveleta">Noveleta</option>
-                      <option value="Rosario">Rosario</option>
-                      <option value="Silang">Silang</option>
-                      <option value="Tagaytay">Tagaytay</option>
-                      <option value="Tanza">Tanza</option>
-                      <option value="Ternate">Ternate</option>
-                      <option value="Trece Martires">Trece Martires</option>
+                      <option value="alfonso">Alfonso</option>
+                      <option value="amadeo">Amadeo</option>
+                      <option value="bacoor">Bacoor</option>
+                      <option value="carmona">Carmona</option>
+                      <option value="cavite city">Cavite City</option>
+                      <option value="dasmariñas">Dasmariñas</option>
+                      <option value="general emilio aguinaldo">General Emilio Aguinaldo</option>
+                      <option value="general mariano alvarez">General Mariano Alvarez</option>
+                      <option value="general trias">General Trias</option>
+                      <option value="imus">Imus</option>
+                      <option value="indang">Indang</option>
+                      <option value="kawit">Kawit</option>
+                      <option value="magallanes">Magallanes</option>
+                      <option value="maragondon">Maragondon</option>
+                      <option value="mendez">Mendez</option>
+                      <option value="naic">Naic</option>
+                      <option value="noveleta">Noveleta</option>
+                      <option value="rosario">Rosario</option>
+                      <option value="silang">Silang</option>
+                      <option value="tagaytay">Tagaytay</option>
+                      <option value="tanza">Tanza</option>
+                      <option value="ternate">Ternate</option>
+                      <option value="trece Martires">Trece Martires</option>
                   </select>
                 </div>
               </div>
@@ -183,16 +189,16 @@
                 </div>
                 <div class="col-sm-8 col-md-8 col-lg-8">
                   <select id="food-genre" multiple="multiple">
-                      <option value="American">American</option>
-                      <option value="Korean">Korean</option>
-                      <option value="Japanese">Japanese</option>
-                      <option value="Chinese">Chinese</option>
-                      <option value="Italian">Italian</option>
-                      <option value="Indian">Indian</option>
-                      <option value="Cajun">Cajun</option>
-                      <option value="Soul">Soul</option>
-                      <option value="Thai">Thai</option>
-                      <option value="Greek Cuisine">Greek Cuisine</option>
+                      <option value="american">American</option>
+                      <option value="korean">Korean</option>
+                      <option value="japanese">Japanese</option>
+                      <option value="chinese">Chinese</option>
+                      <option value="italian">Italian</option>
+                      <option value="indian">Indian</option>
+                      <option value="cajun">Cajun</option>
+                      <option value="soul">Soul</option>
+                      <option value="thai">Thai</option>
+                      <option value="greek cuisine">Greek Cuisine</option>
                   </select>
                 </div>
               </div>
@@ -200,7 +206,7 @@
               <hr>
 
               <div class="text-center">
-                <button type="submit" class="btn btn-default">Search</button>  
+                <button id="btn_search_restaurant" type="submit" class="col-sm-12 col-md-12 col-lg-12 btn btn-danger" data-searching-text="Searching...">Search</button>  
               </div>
               
             </form>
@@ -216,50 +222,10 @@
 
     <div id="main_container" class="col-sm-12 col-md-7 col-lg-7  col-md-offset-1 col-lg-offset-1">
 
-      <!-- Another Information 1 -->
-      <div class="col-sm-12 col-md-6 col-lg-6">
-        <div class="panel panel-default">
-          <div class="panel-heading" style="background-color: #333;color: #fff;">
-            <h3 class="panel-title">Another Information</h3>
-          </div>
-          <div class="panel-body">
-            <div class="col-md-12 col-lg-12">
-              <img src="images/foods/2_1.jpg" alt="..." class="img-responsive">
-              <h5 class="font-fugaz">WOLFGANG PUCK CAFE</h5>
-              <p><small>1163 Miracle Dr, Rocky Face, GA, 30740</small></p>
-            </div>
-            <div class="col-md-12 col-lg-12">
-              <p>Cras lacus nulla, ultricies et tortor viverra, porttitor lacinia arcu. Quisque vestibulum dictum erat. Duis semper, ante sed mollis cursus, tortor diam sagittis dolor, imperdiet eleifend velit ligula sit amet lectus. Fusce placerat varius nibh, ut maximus nunc pulvinar ac. Nulla posuere nulla ac felis maximus, fermentum pellentesque purus consectetur. Cras pulvinar laoreet hendrerit. Donec aliquet mauris quis semper euismod. Vivamus commodo laoreet vulputate. Ut ac tempor odio, vel vulputate nisi. Donec vel dignissim dui. Aenean feugiat ornare libero, in ornare nibh lobortis sit amet.</p>
-              <a href="#">read more...</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Another Information 2-->
-      <div class="col-sm-12 col-md-6 col-lg-6">
-        <div class="panel panel-default">
-          <div class="panel-heading" style="background-color: #333;color: #fff;">
-            <h3 class="panel-title">Another Information 2</h3>
-          </div>
-          <div class="panel-body">
-            <div class="col-md-12 col-lg-12">
-              <img src="images/foods/2_5.jpg" alt="..." class="img-responsive">
-              <h5 class="font-fugaz">WOLFGANG PUCK CAFE</h5>
-              <p><small>1163 Miracle Dr, Rocky Face, GA, 30740</small></p>
-            </div>
-            <div class="col-md-12 col-lg-12">
-              <p>Cras lacus nulla, ultricies et tortor viverra, porttitor lacinia arcu. Quisque vestibulum dictum erat. Duis semper, ante sed mollis cursus, tortor diam sagittis dolor, imperdiet eleifend velit ligula sit amet lectus. Fusce placerat varius nibh, ut maximus nunc pulvinar ac. Nulla posuere nulla ac felis maximus, fermentum pellentesque purus consectetur. Cras pulvinar laoreet hendrerit. Donec aliquet mauris quis semper euismod. Vivamus commodo laoreet vulputate. Ut ac tempor odio, vel vulputate nisi. Donec vel dignissim dui. Aenean feugiat ornare libero, in ornare nibh lobortis sit amet.</p>
-              <a href="#">read more...</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!-- Restaurant List -->
       <div class="col-sm-12 col-md-12 col-lg-12">
         <div class="panel panel-default">
-          <div class="panel-heading">
+          <div class="panel-heading" style="background-color: #333;color: #fff;">
             <h3 class="panel-title">Stores nearby</h3>
           </div>
           <div class="panel-body">
@@ -342,6 +308,48 @@
           </div> <!-- End: panel-body -->
         </div> <!-- End: panel -->
       </div> <!-- End: Restaurant List -->
+
+      <!-- Another Information 1 -->
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="panel panel-default">
+          <div class="panel-heading" style="background-color: #333;color: #fff;">
+            <h3 class="panel-title">Another Information</h3>
+          </div>
+          <div class="panel-body">
+            <div class="col-md-12 col-lg-12">
+              <img src="images/foods/2_1.jpg" alt="..." class="img-responsive">
+              <h5 class="font-fugaz">WOLFGANG PUCK CAFE</h5>
+              <p><small>1163 Miracle Dr, Rocky Face, GA, 30740</small></p>
+            </div>
+            <div class="col-md-12 col-lg-12">
+              <p>Cras lacus nulla, ultricies et tortor viverra, porttitor lacinia arcu. Quisque vestibulum dictum erat. Duis semper, ante sed mollis cursus, tortor diam sagittis dolor, imperdiet eleifend velit ligula sit amet lectus. Fusce placerat varius nibh, ut maximus nunc pulvinar ac. Nulla posuere nulla ac felis maximus, fermentum pellentesque purus consectetur. Cras pulvinar laoreet hendrerit. Donec aliquet mauris quis semper euismod. Vivamus commodo laoreet vulputate. Ut ac tempor odio, vel vulputate nisi. Donec vel dignissim dui. Aenean feugiat ornare libero, in ornare nibh lobortis sit amet.</p>
+              <a href="#">read more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Another Information 2-->
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="panel panel-default">
+          <div class="panel-heading" style="background-color: #333;color: #fff;">
+            <h3 class="panel-title">Another Information 2</h3>
+          </div>
+          <div class="panel-body">
+            <div class="col-md-12 col-lg-12">
+              <img src="images/foods/2_5.jpg" alt="..." class="img-responsive">
+              <h5 class="font-fugaz">WOLFGANG PUCK CAFE</h5>
+              <p><small>1163 Miracle Dr, Rocky Face, GA, 30740</small></p>
+            </div>
+            <div class="col-md-12 col-lg-12">
+              <p>Cras lacus nulla, ultricies et tortor viverra, porttitor lacinia arcu. Quisque vestibulum dictum erat. Duis semper, ante sed mollis cursus, tortor diam sagittis dolor, imperdiet eleifend velit ligula sit amet lectus. Fusce placerat varius nibh, ut maximus nunc pulvinar ac. Nulla posuere nulla ac felis maximus, fermentum pellentesque purus consectetur. Cras pulvinar laoreet hendrerit. Donec aliquet mauris quis semper euismod. Vivamus commodo laoreet vulputate. Ut ac tempor odio, vel vulputate nisi. Donec vel dignissim dui. Aenean feugiat ornare libero, in ornare nibh lobortis sit amet.</p>
+              <a href="#">read more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
 
     </div>
 
@@ -521,21 +529,33 @@
 
       // Initialize Multiselect
       $('#cavite-area').multiselect({
+        enableFiltering: true,
+        filterBehavior: 'value',
         buttonWidth: '100%',
         numberDisplayed: 3,
       });
 
       // Initialize Multiselect
       $('#food-genre').multiselect({
+        enableFiltering: true,
+        filterBehavior: 'value',
         buttonWidth: '100%',
         numberDisplayed: 3,
       });
       
       // Initialize Multiselect
       $('#price-range').multiselect({
+        enableFiltering: true,
+        filterBehavior: 'value',
         buttonWidth: '100%',
         numberDisplayed: 3,
       });
+
+      // Prevents double clicking of button
+      $('#btn_search_restaurant').on('click', function () {
+        $(this).button('searching');
+        $(this).addClass('dis;abled');
+      })
 
     });
   </script>
