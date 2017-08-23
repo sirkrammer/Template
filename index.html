@@ -2,123 +2,355 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
+  <meta name="description" content="">
   <meta name="author" content="">
 
   <title>Portal</title>
 
   <!-- Bootstrap -->
-  <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
   <link href="css/bootstrap/bootstrap-sticky-footer.css" rel="stylesheet">
 
-	<!-- Slick Carousel -->
-	<link href="css/slick/slick.css" rel="stylesheet">
-	<link href="css/slick/slick-theme.css" rel="stylesheet">
+
+  <!-- Slick Carousel -->
+  <link href="css/slick/slick.css" rel="stylesheet">
+  <link href="css/slick/slick-theme.css" rel="stylesheet">
 
 </head>
 
 <body>
-	<!-- Header -->
-	<header class="wrapper-header">
-		<nav class="navbar navbar-inverse">
-			<div class="container">
+  <!-- Header -->
+  <header class="wrapper-header">
+    <nav class="navbar navbar-inverse">
+      <div class="col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1">
 
-		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
-			    
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-main-nav" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <a class="navbar-brand" href="#">
-		        <img alt="Portal" src="images/ic_restaurant_menu_black_24px.svg">
-		      </a>
-		      <a class="navbar-brand" href="#">Portal</a>
-		    </div>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-main-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img alt="Portal" src="images/ic_restaurant_menu_black_24px.svg">
+          </a>
+          <a class="navbar-brand" href="#">Portal</a>
+        </div>
 
-		    <!-- Collect the nav links, forms, and other content for toggling -->
-	    	<div class="collapse navbar-collapse" id="bs-main-nav">
-		      <ul class="nav navbar-nav">
-		        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-		        <li><a href="#">About</a></li>
-		        <li><a href="#">Contact</a></li>
-		        <li role="presentation" class="dropdown">
-		        	<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-		        		Others <span class="caret"></span>
-		        	</a>
-		        	<ul class="dropdown-menu">
-		        		<li><a href="#">Privacy</a></li>
-		        		<li><a href="#">Terms</a></li>
-		        	</ul>
-		        </li>
-		      </ul>
-		      <ul class="nav navbar-nav navbar-right">
-		      	<li><a href="#">Login</a></li>
-		      </ul>
-			  </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-main-nav">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+            <li role="presentation" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                Others <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Login</a></li>
+          </ul>
+        </div>
 
-			</div>
-		</nav>
-	</header>
+      </div>
+    </nav>
+  </header>
 
-	<!-- Body -->
-	<div class="wrapper-body">
-		<div class="container">
-			<div class="slider-banner">
-			  <div class="container"> 
-			  	<div class="col-sm-9 col-md-9 col-lg-9"><img class="img-responsive" src="images/foods/2_1.jpg"></div>
-			  	<div class="col-sm-3 col-md-3 col-lg-3">
-			  		<h5><strong>Lorem ipsum</strong></h5>
-			  		<p>Dolor sit amet, consectetur adipiscing elit. Donec finibus magna nec lectus euismod porttitor. </p>
-			  	</div>
-			  </div>
-			  <div><img class="img-responsive" src="images/foods/2_2.jpg"></div>
-			  <div><img class="img-responsive" src="images/foods/2_4.jpg"></div>
-			</div>
-		</div>
-	</div>
+  <!-- Body -->
+  <div class="wrapper-body">
+    <div class="col-md-12 col-lg-12">
+      <!-- Slider
+      <div class="col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1">
+        <div class="slider-banner">
+          <div> 
+            <div class="col-sm-9 col-md-9 col-lg-9"><img class="img-responsive" src="images/foods/2_1.jpg"></div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+              <h5><strong>Lorem ipsum</strong></h5>
+              <p>Dolor sit amet, consectetur adipiscing elit. Donec finibus magna nec lectus euismod porttitor. </p>
+            </div>
+          </div>
+          <div><img class="img-responsive" src="images/foods/2_2.jpg"></div>
+          <div><img class="img-responsive" src="images/foods/2_4.jpg"></div>
+        </div>
+      </div>
+       -->
 
-	<!-- Footer -->
-	<footer class="footer">
+      <div class="col-sm-12 col-md-7 col-lg-7 col-md-offset-1 col-lg-offset-1">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Spotlight for the Week</h3>
+          </div>
+          <div class="panel-body">
+            <div class="col-md-4 col-lg-4">
+              <img src="images/foods/2_1.jpg" alt="..." class="img-responsive">
+              <h5>WOLFGANG PUCK CAFE</h5>
+              <p><small>1163 Miracle Dr, Rocky Face, GA, 30740</small></p>
+            </div>
+            <div class="col-md-8 col-lg-8">
+              <p>Cras lacus nulla, ultricies et tortor viverra, porttitor lacinia arcu. Quisque vestibulum dictum erat. Duis semper, ante sed mollis cursus, tortor diam sagittis dolor, imperdiet eleifend velit ligula sit amet lectus. Fusce placerat varius nibh, ut maximus nunc pulvinar ac. Nulla posuere nulla ac felis maximus, fermentum pellentesque purus consectetur. Cras pulvinar laoreet hendrerit. Donec aliquet mauris quis semper euismod. Vivamus commodo laoreet vulputate. Ut ac tempor odio, vel vulputate nisi. Donec vel dignissim dui. Aenean feugiat ornare libero, in ornare nibh lobortis sit amet.</p>
+              <p>Nunc euismod id quam id vestibulum. Donec ultrices volutpat euismod. Cras sem lorem, lobortis eget aliquet sit amet, mollis nec enim. Vestibulum lacus erat, vestibulum at ante et, interdum vulputate mi. Vivamus sed arcu consectetur lorem ultrices volutpat vel non mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum hendrerit vehicula bibendum. Praesent vel massa purus. Aliquam cursus malesuada velit, non consectetur sem aliquam et.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Stores nearby</h3>
+          </div>
+          <div class="panel-body">
+
+            <div class="nav nav-tabs" style="overflow: scroll;">
+
+              <!-- Items -->
+              <div style="width: 20%;float: left;">
+                <div class="thumbnail">
+                  <img src="images/foods/1.jpg" alt="...">
+                  <div class="caption">
+                    <h5>WOLFGANG PUCK CAFE</h5>
+                    <p><small>1163 Miracle Dr, Rocky Face, GA, 30740</small></p>
+                    <p><small>Tags:</small></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Items -->
+              <div style="width: 20%;float: left;">
+                <div class="thumbnail">
+                  <img src="images/foods/2_1.jpg" alt="...">
+                  <div class="caption">
+                    <h5>WINDOWS ON THE WORLD</h5>
+                    <p><small>2499 E Gerard Ave #SPC 179, Merced, CA, 95340</small></p>
+                    <p><small>Tags:</small></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Items -->
+              <div style="width: 20%;float: left;">
+                <div class="thumbnail">
+                  <img src="images/foods/3.jpg" alt="...">
+                  <div class="caption">
+                    <h5>OKONOMIYAKI MADONNA</h5>
+                    <p><small>303 Chesapeake Ridge Ln, North East, MD, 21901 </small></p>
+                    <p><small>Tags:</small></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Items -->
+              <div style="width: 20%;float: left;">
+                <div class="thumbnail">
+                  <img src="images/foods/1.jpg" alt="...">
+                  <div class="caption">
+                    <h5>WOLFGANG PUCK CAFE</h5>
+                    <p><small>1163 Miracle Dr, Rocky Face, GA, 30740</small></p>
+                    <p><small>Tags:</small></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Items -->
+              <div style="width: 20%;float: left;">
+                <div class="thumbnail">
+                  <img src="images/foods/2_1.jpg" alt="...">
+                  <div class="caption">
+                    <h5>WINDOWS ON THE WORLD</h5>
+                    <p><small>2499 E Gerard Ave #SPC 179, Merced, CA, 95340</small></p>
+                    <p><small>Tags:</small></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Items -->
+              <div style="width: 20%;float: left;">
+                <div class="thumbnail">
+                  <img src="images/foods/3.jpg" alt="...">
+                  <div class="caption">
+                    <h5>OKONOMIYAKI MADONNA</h5>
+                    <p><small>303 Chesapeake Ridge Ln, North East, MD, 21901 </small></p>
+                    <p><small>Tags:</small></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Items -->
+              <div style="width: 20%;float: left;">
+                <div class="thumbnail">
+                  <img src="images/foods/1.jpg" alt="...">
+                  <div class="caption">
+                    <h5>WOLFGANG PUCK CAFE</h5>
+                    <p><small>1163 Miracle Dr, Rocky Face, GA, 30740</small></p>
+                    <p><small>Tags:</small></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Items -->
+              <div style="width: 20%;float: left;">
+                <div class="thumbnail">
+                  <img src="images/foods/2_1.jpg" alt="...">
+                  <div class="caption">
+                    <h5>WINDOWS ON THE WORLD</h5>
+                    <p><small>2499 E Gerard Ave #SPC 179, Merced, CA, 95340</small></p>
+                    <p><small>Tags:</small></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Items -->
+              <div style="width: 20%;float: left;">
+                <div class="thumbnail">
+                  <img src="images/foods/3.jpg" alt="...">
+                  <div class="caption">
+                    <h5>OKONOMIYAKI MADONNA</h5>
+                    <p><small>303 Chesapeake Ridge Ln, North East, MD, 21901 </small></p>
+                    <p><small>Tags:</small></p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Ranking -->
+      <div class="col-sm-12 col-md-3 col-lg-3">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Rankings</h3>
+          </div>
+          <div class="panel-body">
+            <!-- Items -->
+            <div class="media">
+              <div class="media-left">
+                <a href="#">
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                   WOLFGANG PUCK CAFE <small>1163 Miracle Dr, Rocky Face, GA, 30740</small> 
+                </a>
+                <div class="media-body">
+                  <!-- <h4 class="media-heading">WOLFGANG PUCK CAFE</h4> -->
+                  <p> Vivamus luctus, tellus sed maximus aliquet, nisl felis iaculis tortor, eu porttitor sapien sem at elit. Donec vitae orci dui. Morbi eu ante luctus, feugiat purus nec, porttitor mauris. Nunc elementum ultricies euismod. Curabitur eget elit sit amet leo posuere gravida. Nunc tincidunt cursus ex non maximus.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Items -->
+            <div class="media">
+              <div class="media-left">
+                <a href="#">
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                   WINDOWS ON THE WORLD <small>2499 E Gerard Ave #SPC 179, Merced, CA, 95340</small>
+                </a>
+                <div class="media-body">
+                  <!-- <h4 class="media-heading">WINDOWS ON THE WORLD</h4> -->
+                  <p> Nullam egestas ex lectus, eu egestas sem malesuada a. Vestibulum ultrices elit laoreet, porta arcu malesuada, vulputate enim. Pellentesque imperdiet leo scelerisque purus dictum dictum. Praesent sagittis erat eget mi tempus gravida. Ut malesuada diam sed magna rhoncus facilisis.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Items -->
+            <div class="media">
+              <div class="media-left">
+                <a href="#">
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                   OKONOMIYAKI MADONNA <small>303 Chesapeake Ridge Ln, North East, MD, 21901 </small>
+                </a>
+                <div class="media-body">
+                  <!-- <h4 class="media-heading">OKONOMIYAKI MADONNA</h4> -->
+                  <p> Nulla facilisi. Donec ornare metus id placerat sollicitudin. In nec euismod risus. Aenean non ex blandit, feugiat est a, vulputate lectus. In ac odio auctor, luctus mi a, placerat nunc.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Items -->
+            <div class="media">
+              <div class="media-left">
+                <a href="#">
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                   MIMIU <small>155 Applewood Dr, Swedesboro, NJ, 08085 </small>
+                </a>
+                <div class="media-body">
+                  <!-- <h4 class="media-heading">MIMIU</h4> -->
+                  <p> Donec sit amet lorem in orci rutrum rutrum dignissim eu sapien. Morbi ac nunc ut sapien vulputate tincidunt. Sed sit amet lobortis tortor. Nunc imperdiet mollis consequat. Donec arcu ipsum, rutrum nec magna sit amet, vehicula vehicula velit. Nullam ultricies egestas mauris.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- End of Panel -->
+
+        </div>
+      </div> 
+      <!-- End of Ranking -->
+
+    </div> <!-- End col-sm-12 col-md-12 col-lg-12 -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
     <div class="container">
-    	<div class="col-md-6 col-lg-6">
-    		<div class="footer-links">
-		      <small><a href="#">About Us ・</a></small>
-					<small><a href="#">Contact Us ・</a></small>
-					<small><a href="#">Terms </a></small>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-6">
-				<div class="copyright">
-      		<small>© 2017 Company Name. All rights reserved</small>
-      	</div>
+      <div class="col-md-6 col-lg-6">
+        <div class="footer-links">
+          <small><a href="#">About Us ・</a></small>
+          <small><a href="#">Contact Us ・</a></small>
+          <small><a href="#">Terms </a></small>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <div class="copyright">
+          <small>© 2017 Company Name. All rights reserved</small>
+        </div>
       </div>
     </div>
-	</footer>
+  </footer>
 </body>
 
-	<!-- Bootstrap Prerequisites -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/bootstrap/bootstrap.min.js"></script>
-	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-	<script src="js/bootstrap/ie10-viewport-bug-workaround.js"></script>
+  <!-- Bootstrap Prerequisites -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="js/bootstrap/ie10-viewport-bug-workaround.js"></script>
 
-	<!-- Slick Carousel -->
-	<script src="js/slick/slick.js"></script>
+  <!-- Slick Carousel -->
+  <script src="js/slick/slick.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
       $('.slider-banner').slick({
         dots: true,
-			  infinite: true,
-			  speed: 500,
-			  fade: true,
-			  cssEase: 'linear',
-			  autoplay: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
       });
     });
   </script>
