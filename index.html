@@ -13,18 +13,63 @@
   <!-- Bootstrap -->
   <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
   <link href="css/bootstrap/bootstrap-sticky-footer.css" rel="stylesheet">
+  <link href="css/bootstrap/bootstrap-navbar-fixed-top.css" rel="stylesheet">
+  <link href="css/bootstrap/bootstrap-multiselect.css" rel="stylesheet">
 
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
   <!-- Slick Carousel -->
   <link href="css/slick/slick.css" rel="stylesheet">
   <link href="css/slick/slick-theme.css" rel="stylesheet">
 
+  <style type="text/css">
+    .font-fugaz{
+      font-family: 'Fugaz One', cursive;  
+    }
+
+    .thumbnail > .caption > h5 {
+      font-family: 'Fugaz One', cursive;  
+    }
+
+    body{
+      font-family: 'Roboto', sans-serif;  
+      
+      /* Full height */
+      height: 100%; 
+
+      /* Center and scale the image nicely */
+      background-image: url("images/foods/main_banner.jpg");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+    
+    .navbar {
+      margin-bottom: 0;
+    }
+
+    .cs-row{
+      padding-top: 25px;
+      background: #fff;
+    }
+
+    .panel-black {
+      color: #fff;
+      background: #000;
+    }
+
+
+  </style>
 </head>
 
 <body>
   <!-- Header -->
   <header class="wrapper-header">
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1">
 
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -39,7 +84,7 @@
           <a class="navbar-brand" href="#">
             <img alt="Portal" src="images/ic_restaurant_menu_black_24px.svg">
           </a>
-          <a class="navbar-brand" href="#">Portal</a>
+          <a class="navbar-brand" href="#"><span class="font-fugaz" style="color: #fff;">Portal</span></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -65,169 +110,265 @@
 
       </div>
     </nav>
+    
+
+
   </header>
 
-  <!-- Body -->
-  <div class="wrapper-body">
-    <div class="col-md-12 col-lg-12">
-      <!-- Slider
-      <div class="col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1">
-        <div class="slider-banner">
-          <div> 
-            <div class="col-sm-9 col-md-9 col-lg-9"><img class="img-responsive" src="images/foods/2_1.jpg"></div>
-            <div class="col-sm-3 col-md-3 col-lg-3">
-              <h5><strong>Lorem ipsum</strong></h5>
-              <p>Dolor sit amet, consectetur adipiscing elit. Donec finibus magna nec lectus euismod porttitor. </p>
-            </div>
-          </div>
-          <div><img class="img-responsive" src="images/foods/2_2.jpg"></div>
-          <div><img class="img-responsive" src="images/foods/2_4.jpg"></div>
-        </div>
-      </div>
-       -->
+  <!-- Main Banner -->
+  <div class="row banner-padding">
+    <div class="col-sm-4 col-md-3 col-lg-3 col-md-offset-8 col-lg-offset-8 cs-slider-content">
 
-      <div class="col-sm-12 col-md-7 col-lg-7 col-md-offset-1 col-lg-offset-1">
+      <div class="panel panel-default">
+        <!-- Panel Contents -->
+        <div class="panel-body">
+          <div class="col-md-12 col-lg-12">
+            <h4 class="font-fugaz">Search</h4>
+            <hr>
+            <form class="form-horizontal">
+
+              <div class="form-group">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                  <label for="email">Price Range:</label>
+                </div>
+                <div class="col-sm-8 col-md-8 col-lg-8">
+                  <select id="price-range" multiple="multiple">
+                      <option value="100-200">PHP 100-200</option>
+                      <option value="201-300">PHP 201-300</option>
+                      <option value="301-400">PHP 301-400</option>
+                      <option value="401-500">PHP 401-500</option>
+                      <option value="501-onwards">PHP 501-onwards</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Area: -->
+              <div class="form-group">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                  <label for="email">Area:</label>
+                </div>
+                <div class="col-sm-8 col-md-8 col-lg-8">
+                  <select id="cavite-area" multiple="multiple">
+                      <option value="Alfonso">Alfonso</option>
+                      <option value="Amadeo">Amadeo</option>
+                      <option value="Bacoor">Bacoor</option>
+                      <option value="Carmona">Carmona</option>
+                      <option value="Cavite City">Cavite City</option>
+                      <option value="Dasmariñas">Dasmariñas</option>
+                      <option value="General Emilio Aguinaldo">General Emilio Aguinaldo</option>
+                      <option value="General Mariano Alvarez">General Mariano Alvarez</option>
+                      <option value="General Trias">General Trias</option>
+                      <option value="Imus">Imus</option>
+                      <option value="Indang">Indang</option>
+                      <option value="Kawit">Kawit</option>
+                      <option value="Magallanes">Magallanes</option>
+                      <option value="Maragondon">Maragondon</option>
+                      <option value="Mendez">Mendez</option>
+                      <option value="Naic">Naic</option>
+                      <option value="Noveleta">Noveleta</option>
+                      <option value="Rosario">Rosario</option>
+                      <option value="Silang">Silang</option>
+                      <option value="Tagaytay">Tagaytay</option>
+                      <option value="Tanza">Tanza</option>
+                      <option value="Ternate">Ternate</option>
+                      <option value="Trece Martires">Trece Martires</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Food Genre: -->
+              <div class="form-group">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                  <label for="">Genre:</label>
+                </div>
+                <div class="col-sm-8 col-md-8 col-lg-8">
+                  <select id="food-genre" multiple="multiple">
+                      <option value="American">American</option>
+                      <option value="Korean">Korean</option>
+                      <option value="Japanese">Japanese</option>
+                      <option value="Chinese">Chinese</option>
+                      <option value="Italian">Italian</option>
+                      <option value="Indian">Indian</option>
+                      <option value="Cajun">Cajun</option>
+                      <option value="Soul">Soul</option>
+                      <option value="Thai">Thai</option>
+                      <option value="Greek Cuisine">Greek Cuisine</option>
+                  </select>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="text-center">
+                <button type="submit" class="btn btn-default">Search</button>  
+              </div>
+              
+            </form>
+          </div>
+        </div> <!-- End: Panel -->
+      </div>
+
+    </div> <!-- End: col-sm-4 col-md-3 col-lg-3 -->
+  </div> <!-- End: row -->
+
+  <!-- Body -->
+  <div class="row cs-row">
+
+    <div id="main_container" class="col-sm-12 col-md-7 col-lg-7  col-md-offset-1 col-lg-offset-1">
+
+      <!-- Another Information 1 -->
+      <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">Spotlight for the Week</h3>
+          <div class="panel-heading" style="background-color: #333;color: #fff;">
+            <h3 class="panel-title">Another Information</h3>
           </div>
           <div class="panel-body">
-            <div class="col-md-4 col-lg-4">
+            <div class="col-md-12 col-lg-12">
               <img src="images/foods/2_1.jpg" alt="..." class="img-responsive">
-              <h5>WOLFGANG PUCK CAFE</h5>
+              <h5 class="font-fugaz">WOLFGANG PUCK CAFE</h5>
               <p><small>1163 Miracle Dr, Rocky Face, GA, 30740</small></p>
             </div>
-            <div class="col-md-8 col-lg-8">
+            <div class="col-md-12 col-lg-12">
               <p>Cras lacus nulla, ultricies et tortor viverra, porttitor lacinia arcu. Quisque vestibulum dictum erat. Duis semper, ante sed mollis cursus, tortor diam sagittis dolor, imperdiet eleifend velit ligula sit amet lectus. Fusce placerat varius nibh, ut maximus nunc pulvinar ac. Nulla posuere nulla ac felis maximus, fermentum pellentesque purus consectetur. Cras pulvinar laoreet hendrerit. Donec aliquet mauris quis semper euismod. Vivamus commodo laoreet vulputate. Ut ac tempor odio, vel vulputate nisi. Donec vel dignissim dui. Aenean feugiat ornare libero, in ornare nibh lobortis sit amet.</p>
-              <p>Nunc euismod id quam id vestibulum. Donec ultrices volutpat euismod. Cras sem lorem, lobortis eget aliquet sit amet, mollis nec enim. Vestibulum lacus erat, vestibulum at ante et, interdum vulputate mi. Vivamus sed arcu consectetur lorem ultrices volutpat vel non mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum hendrerit vehicula bibendum. Praesent vel massa purus. Aliquam cursus malesuada velit, non consectetur sem aliquam et.</p>
+              <a href="#">read more...</a>
             </div>
           </div>
         </div>
+      </div>
 
+      <!-- Another Information 2-->
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="panel panel-default">
+          <div class="panel-heading" style="background-color: #333;color: #fff;">
+            <h3 class="panel-title">Another Information 2</h3>
+          </div>
+          <div class="panel-body">
+            <div class="col-md-12 col-lg-12">
+              <img src="images/foods/2_5.jpg" alt="..." class="img-responsive">
+              <h5 class="font-fugaz">WOLFGANG PUCK CAFE</h5>
+              <p><small>1163 Miracle Dr, Rocky Face, GA, 30740</small></p>
+            </div>
+            <div class="col-md-12 col-lg-12">
+              <p>Cras lacus nulla, ultricies et tortor viverra, porttitor lacinia arcu. Quisque vestibulum dictum erat. Duis semper, ante sed mollis cursus, tortor diam sagittis dolor, imperdiet eleifend velit ligula sit amet lectus. Fusce placerat varius nibh, ut maximus nunc pulvinar ac. Nulla posuere nulla ac felis maximus, fermentum pellentesque purus consectetur. Cras pulvinar laoreet hendrerit. Donec aliquet mauris quis semper euismod. Vivamus commodo laoreet vulputate. Ut ac tempor odio, vel vulputate nisi. Donec vel dignissim dui. Aenean feugiat ornare libero, in ornare nibh lobortis sit amet.</p>
+              <a href="#">read more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Restaurant List -->
+      <div class="col-sm-12 col-md-12 col-lg-12">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title">Stores nearby</h3>
           </div>
           <div class="panel-body">
-
-            <div class="nav nav-tabs" style="overflow: scroll;">
-
+          <!-- slider -->
+            <div class="restaurant-list" style="width: 100%">
+         
               <!-- Items -->
-              <div style="width: 20%;float: left;">
-                <div class="thumbnail">
-                  <img src="images/foods/1.jpg" alt="...">
-                  <div class="caption">
-                    <h5>WOLFGANG PUCK CAFE</h5>
-                    <p><small>1163 Miracle Dr, Rocky Face, GA, 30740</small></p>
-                    <p><small>Tags:</small></p>
-                  </div>
+              <div class="thumbnail" style="margin-left: 10px;">
+                <img src="images/foods/1.jpg" alt="...">
+                <div class="caption">
+                  <h5>WOLFGANG PUCK CAFE</h5>
+                  <p><small>1163 Miracle Dr, Rocky Face, GA, 30740</small></p>
+                  <p><small>Tags:</small></p>
                 </div>
               </div>
 
               <!-- Items -->
-              <div style="width: 20%;float: left;">
-                <div class="thumbnail">
-                  <img src="images/foods/2_1.jpg" alt="...">
-                  <div class="caption">
-                    <h5>WINDOWS ON THE WORLD</h5>
-                    <p><small>2499 E Gerard Ave #SPC 179, Merced, CA, 95340</small></p>
-                    <p><small>Tags:</small></p>
-                  </div>
+              <div class="thumbnail" style="margin-left: 10px;">
+                <img src="images/foods/2_1.jpg" alt="...">
+                <div class="caption">
+                  <h5>WINDOWS ON THE WORLD</h5>
+                  <p><small>2499 E Gerard Ave #SPC 179, Merced, CA, 95340</small></p>
+                  <p><small>Tags:</small></p>
                 </div>
               </div>
 
               <!-- Items -->
-              <div style="width: 20%;float: left;">
-                <div class="thumbnail">
-                  <img src="images/foods/3.jpg" alt="...">
-                  <div class="caption">
-                    <h5>OKONOMIYAKI MADONNA</h5>
-                    <p><small>303 Chesapeake Ridge Ln, North East, MD, 21901 </small></p>
-                    <p><small>Tags:</small></p>
-                  </div>
+              <div class="thumbnail" style="margin-left: 10px;">
+                <img src="images/foods/2_3.jpg" alt="...">
+                <div class="caption">
+                  <h5>OKONOMIYAKI MADONNA</h5>
+                  <p><small>303 Chesapeake Ridge Ln, North East, MD, 21901 </small></p>
+                  <p><small>Tags:</small></p>
                 </div>
               </div>
 
               <!-- Items -->
-              <div style="width: 20%;float: left;">
-                <div class="thumbnail">
-                  <img src="images/foods/1.jpg" alt="...">
-                  <div class="caption">
-                    <h5>WOLFGANG PUCK CAFE</h5>
-                    <p><small>1163 Miracle Dr, Rocky Face, GA, 30740</small></p>
-                    <p><small>Tags:</small></p>
-                  </div>
+              <div class="thumbnail" style="margin-left: 10px;">
+                <img src="images/foods/2_4.jpg" alt="...">
+                <div class="caption">
+                  <h5>WOLFGANG PUCK CAFE</h5>
+                  <p><small>1163 Miracle Dr, Rocky Face, GA, 30740</small></p>
+                  <p><small>Tags:</small></p>
                 </div>
               </div>
 
               <!-- Items -->
-              <div style="width: 20%;float: left;">
-                <div class="thumbnail">
-                  <img src="images/foods/2_1.jpg" alt="...">
-                  <div class="caption">
-                    <h5>WINDOWS ON THE WORLD</h5>
-                    <p><small>2499 E Gerard Ave #SPC 179, Merced, CA, 95340</small></p>
-                    <p><small>Tags:</small></p>
-                  </div>
+              <div class="thumbnail" style="margin-left: 10px;">
+                <img src="images/foods/2_5.jpg" alt="...">
+                <div class="caption">
+                  <h5>WINDOWS ON THE WORLD</h5>
+                  <p><small>2499 E Gerard Ave #SPC 179, Merced, CA, 95340</small></p>
+                  <p><small>Tags:</small></p>
                 </div>
               </div>
 
               <!-- Items -->
-              <div style="width: 20%;float: left;">
-                <div class="thumbnail">
-                  <img src="images/foods/3.jpg" alt="...">
-                  <div class="caption">
-                    <h5>OKONOMIYAKI MADONNA</h5>
-                    <p><small>303 Chesapeake Ridge Ln, North East, MD, 21901 </small></p>
-                    <p><small>Tags:</small></p>
-                  </div>
+              <div class="thumbnail" style="margin-left: 10px;">
+                <img src="images/foods/5.jpg" alt="...">
+                <div class="caption">
+                  <h5>OKONOMIYAKI MADONNA</h5>
+                  <p><small>303 Chesapeake Ridge Ln, North East, MD, 21901 </small></p>
+                  <p><small>Tags:</small></p>
                 </div>
               </div>
 
               <!-- Items -->
-              <div style="width: 20%;float: left;">
-                <div class="thumbnail">
-                  <img src="images/foods/1.jpg" alt="...">
-                  <div class="caption">
-                    <h5>WOLFGANG PUCK CAFE</h5>
-                    <p><small>1163 Miracle Dr, Rocky Face, GA, 30740</small></p>
-                    <p><small>Tags:</small></p>
-                  </div>
+              <div class="thumbnail" style="margin-left: 10px;">
+                <img src="images/foods/4.jpg" alt="...">
+                <div class="caption">
+                  <h5>OKONOMIYAKI MADONNA</h5>
+                  <p><small>303 Chesapeake Ridge Ln, North East, MD, 21901 </small></p>
+                  <p><small>Tags:</small></p>
                 </div>
               </div>
 
-              <!-- Items -->
-              <div style="width: 20%;float: left;">
-                <div class="thumbnail">
-                  <img src="images/foods/2_1.jpg" alt="...">
-                  <div class="caption">
-                    <h5>WINDOWS ON THE WORLD</h5>
-                    <p><small>2499 E Gerard Ave #SPC 179, Merced, CA, 95340</small></p>
-                    <p><small>Tags:</small></p>
-                  </div>
-                </div>
-              </div>
+            </div> <!-- END: Slide Banner -->
 
-              <!-- Items -->
-              <div style="width: 20%;float: left;">
-                <div class="thumbnail">
-                  <img src="images/foods/3.jpg" alt="...">
-                  <div class="caption">
-                    <h5>OKONOMIYAKI MADONNA</h5>
-                    <p><small>303 Chesapeake Ridge Ln, North East, MD, 21901 </small></p>
-                    <p><small>Tags:</small></p>
-                  </div>
-                </div>
-              </div>
 
+          </div> <!-- End: panel-body -->
+        </div> <!-- End: panel -->
+      </div> <!-- End: Restaurant List -->
+
+    </div>
+
+    <div id="left_container" class="col-sm-12 col-md-3 col-lg-3">
+      
+      <!-- Spotlight -->
+      <div class="col-sm-12 col-md-12 col-lg-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Spotlight for the Week</h3>
+          </div>
+          <div class="panel-body">
+            <div class="col-md-12 col-lg-12">
+              <img src="images/foods/2_1.jpg" alt="..." class="img-responsive">
+              <h5 class="font-fugaz">WOLFGANG PUCK CAFE</h5>
+              <p><small>1163 Miracle Dr, Rocky Face, GA, 30740</small></p>
             </div>
-
+            <div class="col-md-12 col-lg-12">
+              <p>Cras lacus nulla, ultricies et tortor viverra, porttitor lacinia arcu. Quisque vestibulum dictum erat. Duis semper, ante sed mollis cursus, tortor diam sagittis dolor, imperdiet eleifend velit ligula sit amet lectus. Fusce placerat varius nibh, ut maximus nunc pulvinar ac. Nulla posuere nulla ac felis maximus, fermentum pellentesque purus consectetur. Cras pulvinar laoreet hendrerit. Donec aliquet mauris quis semper euismod. Vivamus commodo laoreet vulputate. Ut ac tempor odio, vel vulputate nisi. Donec vel dignissim dui. Aenean feugiat ornare libero, in ornare nibh lobortis sit amet.</p>
+              <a href="#">read more...</a>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Ranking -->
-      <div class="col-sm-12 col-md-3 col-lg-3">
+      <div class="col-sm-12 col-md-12 col-lg-12">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title">Rankings</h3>
@@ -306,22 +447,23 @@
             </div>
 
           </div>
-          <!-- End of Panel -->
+          <!-- End : Panel -->
 
         </div>
       </div> 
-      <!-- End of Ranking -->
+      <!-- End : Ranking -->
 
-    </div> <!-- End col-sm-12 col-md-12 col-lg-12 -->
-  </div>
+    </div>
+
+  </div><!-- End : Wrapper -->
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="col-md-6 col-lg-6">
         <div class="footer-links">
-          <small><a href="#">About Us ・</a></small>
-          <small><a href="#">Contact Us ・</a></small>
+          <small><a href="#">About ・</a></small>
+          <small><a href="#">Contact ・</a></small>
           <small><a href="#">Terms </a></small>
         </div>
       </div>
@@ -337,6 +479,7 @@
   <!-- Bootstrap Prerequisites -->
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/bootstrap/bootstrap.min.js"></script>
+  <script src="js/bootstrap/bootstrap-multiselect.js"></script>
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <script src="js/bootstrap/ie10-viewport-bug-workaround.js"></script>
 
@@ -344,14 +487,56 @@
   <script src="js/slick/slick.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
-      $('.slider-banner').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear',
-        autoplay: true,
+      $('.restaurant-list').slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }]
       });
+
+      // Initialize Multiselect
+      $('#cavite-area').multiselect({
+        buttonWidth: '100%',
+        numberDisplayed: 3,
+      });
+
+      // Initialize Multiselect
+      $('#food-genre').multiselect({
+        buttonWidth: '100%',
+        numberDisplayed: 3,
+      });
+      
+      // Initialize Multiselect
+      $('#price-range').multiselect({
+        buttonWidth: '100%',
+        numberDisplayed: 3,
+      });
+
     });
   </script>
 
